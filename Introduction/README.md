@@ -51,3 +51,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📜 Citation
 If you use this software, please refer to [CITATION.md](CITATION.md).
+
+## AI Assistance Disclosure
+
+Development of PLANETFALL involved the use of AI-assisted coding and documentation tools, including large language models used for code generation, refactoring, architectural drafting, and documentation support.
+
+All generated outputs were reviewed, modified, tested, or curated by the repository maintainer before inclusion.
+
+AI systems contributed to implementation and iteration speed, but scientific direction, framework philosophy, validation logic, repository decisions, and final responsibility remain human.
+
+PLANETFALL should therefore be considered a human-directed, AI-assisted research software project.
