@@ -18,4 +18,4 @@ it asks,
 
 The project reflects an outsider's attempt to apply principles of scientific auditing, reproducibility, and forensic analysis across disciplinary boundaries.
 
-If the framework proves useful, it will not be because it assumes discoveries are real. It will be because it assumes they are not.
+If the framework proves useful, it will not be because it assumes discoveries are real. It will be because it assumes they are not. All criticism, suggestions, and comments are welcome. 
