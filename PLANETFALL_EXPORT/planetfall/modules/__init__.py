@@ -1,0 +1,67 @@
+# Phase I
+from .candidate_harvester import CandidateHarvester
+from .signal_integrity import SignalIntegrityEngine
+from .stellar_background_check import StellarBackgroundCheck
+from .binary_tribunal import BinaryTribunal
+from .contamination_auditor import ContaminationAuditor
+from .sector_survival import SectorSurvivalTest
+from .detrending_torture import DetrendingTortureChamber
+from .injection_recovery import InjectionRecoveryEngine
+from .known_planet_check import KnownPlanetCheck
+from .novelty_engine import NoveltyEngine
+from .tribunal import Tribunal
+from .reporting import ReportingEngine
+from .calibration_engine import CalibrationEngine
+
+# Phase II
+from .literature_executioner import LiteratureExecutioner
+from .multi_sector_retrial import MultiSectorRetrial
+from .pipeline_independence_test import PipelineIndependenceTest
+from .shape_forensics import ShapeForensics
+from .gaia_contamination_assault import GaiaContaminationAssault
+from .stellar_sanity_check import StellarSanityCheck
+from .adversarial_ai_review import AdversarialAIReview
+from .discovery_readiness_score import DiscoveryReadinessScore
+
+# Phase III
+from .exofop_investigation import ExoFOPInvestigation
+from .planet_parameter_estimation import PlanetParameterEstimation
+from .vespa_fp_analysis import VespaFPAnalysis
+from .transit_fitting import TransitFitting
+from .uncertainty_assault import UncertaintyAssault
+from .red_team_review import RedTeamReview
+from .novelty_investigation import NoveltyInvestigation
+from .publication_readiness import PublicationReadiness
+
+# Phase IV
+from .known_answer_calibration import KnownAnswerCalibration
+from .external_pipeline_replication import ExternalPipelineReplication
+from .raw_data_reconstruction import RawDataReconstruction
+from .stellar_parameter_audit import StellarParameterAudit
+from .planetary_parameter_monte_carlo import PlanetaryParameterMonteCarlo
+from .independent_fp_assessment import IndependentFPAssessment
+from .professional_astronomer_test import ProfessionalAstronomerTest
+from .discovery_claim_audit import DiscoveryClaimAudit
+from .referee_panel import RefereePanel
+
+# Kill Eureka
+from .zero_knowledge_reconstruction import ZeroKnowledgeReconstruction
+from .pipeline_diversity_test import PipelineDiversityTest
+from .parameter_perturbation_assault import ParameterPerturbationAssault
+from .contamination_nightmare_scenarios import ContaminationNightmareScenarios
+from .external_reproducibility_challenge import ExternalReproducibilityChallenge
+from .hostile_referee_council import HostileRefereeCouncil
+from .claim_destruction import ClaimDestruction
+from .reality_score import RealityScore
+
+# Break Planetfall
+from .label_leakage_investigation import LabelLeakageInvestigation
+from .blind_evaluation import BlindEvaluation
+from .holdout_universe_test import HoldoutUniverseTest
+from .adversarial_examples import AdversarialExamples
+from .randomization_test import RandomizationTest
+from .feature_ablation import FeatureAblation
+from .red_team_statistical_audit import RedTeamStatisticalAudit
+from .reproducibility_audit import ReproducibilityAudit
+from .benchmark_stress_test import BenchmarkStressTest
+from .benchmark_claim_audit import BenchmarkClaimAudit
