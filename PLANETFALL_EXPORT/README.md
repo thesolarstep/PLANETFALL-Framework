@@ -10,7 +10,7 @@ PLANETFALL is a Python-based framework designed to aggressively eliminate false-
 
 ## 🚀 Repository Details
 - **Description**: Adversarial validation framework for exoplanets.
-- **Author**: KADAM ADITYA ANIL (M.Sc. Microbiology, GATE XL Qualified, Nanobiotech Researcher)
+- **Author**: KADAM ADITYA ANIL (M.Sc. Microbiology)
 - **ORCID**: [0000-0001-9585-8955](https://orcid.org/0000-0001-9585-8955)
 - **Topics**: `astronomy`, `exoplanets`, `validation`, `scientific-software`, `adversarial-validation`, `python`
 
