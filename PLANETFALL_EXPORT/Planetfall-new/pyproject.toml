@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "planetfall"
+version = "1.0.0"
+authors = [
+  { name="KADAM ADITYA ANIL" },
+]
+description = "Adversarial exoplanet candidate validation framework inspired by the ANOMALY382 philosophy."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Astronomy",
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "matplotlib>=3.7.0",
+    "astropy>=5.0.0",
+    "scipy>=1.10.0",
+    "tqdm>=4.65.0",
+    "lightkurve>=2.4.0",
+    "astroquery>=0.4.6",
+    "batman-package>=2.4.9",
+    "transitleastsquares>=1.30",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/thesolarstep/planetfall-validation-framework"
+"Bug Tracker" = "https://github.com/thesolarstep/planetfall-validation-framework/issues"
+
+[project.scripts]
+planetfall = "planetfall.main:main"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.ruff]
+line-length = 88
+target-version = "py38"
+select = ["E", "F", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,4 @@
+target_identifier,common_name,detected_period_days,epoch_t0,transit_depth_ppm,duration_hours,transit_snr,sde,planet_radius_earth,equilibrium_temp_k,tribunal_verdict,false_positive_probability,catalog_disposition,notes
+TIC 100100827,WASP-18,0.941126,1354.46151,10433.6,2.0,664.7,20.1,15.0,2254.8,REJECTED_FALSE_POSITIVE,0.9999,CONFIRMED_PLANET (WASP-18 b),"Rejected: Significant secondary eclipse detected (SNR = 31.17 >= 3.0, depth = 418 ppm) -> Self-luminous companion"
+TIC 25155310,WASP-126,3.289225,1327.52163,5303.4,3.0,113.4,12.5,9.86,1338.6,REJECTED_FALSE_POSITIVE,0.9999,CONFIRMED_PLANET (WASP-126 b),"Rejected: Odd-even transit depth difference statistically significant (Z = 3.49 >= 3.0, p = 0.0005) -> Eclipsing Binary"
+TIC 88863718,TOI-1196,1.930787,2230.75493,853.8,3.0,42.0,14.8,6.39,2353.0,REJECTED_FALSE_POSITIVE,0.9999,KNOWN_TOI (TOI-1196.01),Rejected: Significant pixel centroid offset (dr = 1.20 pix = 25.1 arcsec > 1.0 pix) -> Nearby contaminating source

@@ -1,0 +1,2 @@
+target_identifier,common_name,detected_period_days,epoch_t0,transit_depth_ppm,duration_hours,transit_snr,sde,planet_radius_earth,equilibrium_temp_k,tribunal_verdict,false_positive_probability,catalog_disposition,notes
+TIC 322307342,TIC 322307342,3.58826,2063.64068,3812.1,2.0,32.9,11.8,13.5,1657.8,CONFIRMED_PLANET_CANDIDATE,0.05,FIELD_STAR (Uncatalogued),Clean detection

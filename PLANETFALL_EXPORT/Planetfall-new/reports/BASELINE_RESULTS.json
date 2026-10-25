@@ -1,0 +1,259 @@
+{
+  "audit_timestamp": "2026-10-25T23:19:00+05:30",
+  "auditor": "Antigravity Autonomous Scientific Auditor",
+  "git_commit": "c92edd2",
+  "verification_summary": {
+    "total_findings": 20,
+    "verified_count": 14,
+    "by_severity": {
+      "CRITICAL": 6,
+      "HIGH": 6,
+      "MEDIUM": 4,
+      "LOW": 3,
+      "INFORMATIONAL": 1
+    }
+  },
+  "defects": [
+    {
+      "defect_id": "CRIT-01",
+      "severity": "CRITICAL",
+      "file_path": "src/planetfall/main.py",
+      "function_or_lines": "run_command (lines 66-75)",
+      "observed_behaviour": "Queries candidate['label'] == 'False Positive' and injects synthetic odd-even, secondary eclipse, and centroid motion flags via TIC ID modulo arithmetic.",
+      "reproduction_command": "grep -n -C 5 \"candidate.get('label') == 'False Positive'\" src/planetfall/main.py",
+      "scientific_consequence": "Direct ground-truth label leakage. Framework cheats on benchmarks rather than discriminating astrophysical signals from data.",
+      "remedy": "Completely remove label checking and context injection. Compute vetting metrics strictly from observational photometry.",
+      "verified": true
+    },
+    {
+      "defect_id": "CRIT-02",
+      "severity": "CRITICAL",
+      "file_path": "src/planetfall/validators/blind_evaluation.py, label_leakage_investigation.py",
+      "function_or_lines": "run (lines 7-14 and 8-17)",
+      "observed_behaviour": "Writes canned markdown files asserting 'The framework logic is intrinsically blind' without executing any blinded tests.",
+      "reproduction_command": "cat src/planetfall/validators/blind_evaluation.py",
+      "scientific_consequence": "Deceptive self-certification concealing CRIT-01 label leakage from auditors.",
+      "remedy": "Quarantine deceptive mock validators and implement real blind test fixtures.",
+      "verified": true
+    },
+    {
+      "defect_id": "CRIT-03",
+      "severity": "CRITICAL",
+      "file_path": "src/planetfall/engines/transit_fitting.py, planetary_parameter_monte_carlo.py, injection_recovery.py",
+      "function_or_lines": "run methods across modules",
+      "observed_behaviour": "Writes hardcoded Mandel-Agol parameters (Rp/R*=0.021), static 10,000 MCMC samples, and static 95% recovery table without evaluating light curves.",
+      "reproduction_command": "grep -n \"Rp/R*: 0.021\" src/planetfall/engines/transit_fitting.py",
+      "scientific_consequence": "Systematic computational fabrication. Outputs are completely dissociated from observational inputs.",
+      "remedy": "Reimplement engines using real numerical algorithms (batman/scipy transit fitting, authentic injection-recovery, MCMC sampling).",
+      "verified": false
+    },
+    {
+      "defect_id": "CRIT-04",
+      "severity": "CRITICAL",
+      "file_path": "src/planetfall/engines/planet_parameter_estimation.py, publication_readiness.py, vespa_fp_analysis.py",
+      "function_or_lines": "run (cid conditionals)",
+      "observed_behaviour": "Hardcodes favorable physical interpretations (e.g. 'Optimistic Habitable Zone', Novelty=95) for specific TIC IDs (88863718, 114018671).",
+      "reproduction_command": "grep -rn \"cid == 88863718\" src/planetfall/",
+      "scientific_consequence": "Target-specific bias and favoritism violating scientific objectivity.",
+      "remedy": "Remove all candidate ID conditional branching. Implement generalized physical equations for equilibrium temperature and insolance.",
+      "verified": true
+    },
+    {
+      "defect_id": "CRIT-05",
+      "severity": "CRITICAL",
+      "file_path": "variable_star_pipeline/audit_report.md, survivors.csv",
+      "function_or_lines": "Historical pipeline execution artifacts",
+      "observed_behaviour": "Prior manual bypass overwrote candidate periods with 100.0, amplitudes with 5.0, and discovery scores with 100.0.",
+      "reproduction_command": "cat variable_star_pipeline/audit_report.md",
+      "scientific_consequence": "Compromised historical catalog tables. Falsified candidates forced into survivor lists.",
+      "remedy": "Quarantine survivors.csv; retain reconstruct_candidates.py forensic recovery and real_survivors.csv.",
+      "verified": true
+    },
+    {
+      "defect_id": "CRIT-06",
+      "severity": "CRITICAL",
+      "file_path": "src/planetfall/reporting/reporting.py",
+      "function_or_lines": "mock_plots (lines 16-23)",
+      "observed_behaviour": "Plots synthetic flat lines (y=1.0) with Gaussian noise and saves them as diagnostic light curves.",
+      "reproduction_command": "cat src/planetfall/reporting/reporting.py",
+      "scientific_consequence": "Diagnostic figures are fabricated and do not reflect candidate photometry.",
+      "remedy": "Reimplement reporting engine to generate publication-quality phased transit plots from real photometry arrays.",
+      "verified": false
+    },
+    {
+      "defect_id": "HIGH-01",
+      "severity": "HIGH",
+      "file_path": "src/planetfall/modules/candidate_harvester.py",
+      "function_or_lines": "__init__ (lines 11-12)",
+      "observed_behaviour": "Expects non-existent file TOI_2026.06.01_04.33.13.csv in data_dir.",
+      "reproduction_command": "ls -l data/TOI_2026.06.01_04.33.13.csv",
+      "scientific_consequence": "Pipeline cannot run without user manually procuring missing catalog file.",
+      "remedy": "Implement automated data acquisition layer to retrieve TOI catalogs and light curves directly from MAST / Exoplanet Archive.",
+      "verified": true
+    },
+    {
+      "defect_id": "HIGH-02",
+      "severity": "HIGH",
+      "file_path": "src/planetfall/main.py",
+      "function_or_lines": "run_command (lines 26-31)",
+      "observed_behaviour": "Calls harvester.run() which does not exist; broad except block catches AttributeError, prints error, and returns without failing exit code.",
+      "reproduction_command": ".venv/bin/planetfall run --data_dir data",
+      "scientific_consequence": "Primary entry point crashes immediately and silently returns exit code 0.",
+      "remedy": "Implement CandidateHarvester.run() and remove exception suppression so runtime errors propagate with non-zero exit codes.",
+      "verified": true
+    },
+    {
+      "defect_id": "HIGH-03",
+      "severity": "HIGH",
+      "file_path": "src/planetfall/main.py",
+      "function_or_lines": "validate_command, tribunal_command, report_command (lines 93-110)",
+      "observed_behaviour": "Documented CLI subcommands print placeholder messages and do not execute any validation logic.",
+      "reproduction_command": ".venv/bin/planetfall validate test",
+      "scientific_consequence": "Documented CLI interface is non-functional.",
+      "remedy": "Implement modular CLI actions in planetfall.py connecting to core engines.",
+      "verified": true
+    },
+    {
+      "defect_id": "HIGH-04",
+      "severity": "HIGH",
+      "file_path": "src/planetfall/modules/tribunal.py",
+      "function_or_lines": "run (lines 28-46)",
+      "observed_behaviour": "Computes confidence = 1.0 - (score / 150.0), presenting an arbitrary heuristic as a probability.",
+      "reproduction_command": "grep -n \"confidence = \" src/planetfall/modules/tribunal.py",
+      "scientific_consequence": "Probabilities are statistically ungrounded and meaningless.",
+      "remedy": "Replace heuristic with calibrated False Positive Probabilities (FPP) or likelihood ratios.",
+      "verified": false
+    },
+    {
+      "defect_id": "HIGH-05",
+      "severity": "HIGH",
+      "file_path": "photometry_analysis/astrometry_validation/astrometric_audit_v4.py",
+      "function_or_lines": "query_gaia (lines 11-39)",
+      "observed_behaviour": "Performs unrecorded live network query to external Gaia TAP service without caching or provenance manifest.",
+      "reproduction_command": "grep -n \"Gaia.launch_job_async\" photometry_analysis/astrometry_validation/astrometric_audit_v4.py",
+      "scientific_consequence": "Non-reproducible external dependency vulnerable to remote network failures or catalog updates.",
+      "remedy": "Implement local caching with SHA-256 verification and explicit fallback handling.",
+      "verified": true
+    },
+    {
+      "defect_id": "HIGH-06",
+      "severity": "HIGH",
+      "file_path": "variable_star_pipeline/analyze_candidate_1.py",
+      "function_or_lines": "lines 7-8",
+      "observed_behaviour": "Hardcodes non-existent path candidates/candidate_1/light_curve.csv causing immediate FileNotFoundError.",
+      "reproduction_command": "grep -n \"candidates/candidate_1\" variable_star_pipeline/analyze_candidate_1.py",
+      "scientific_consequence": "Candidate analysis script is broken out-of-the-box.",
+      "remedy": "Update path to point to candidate_investigations/9c44d67a-14fb-5f1a-ac17-65a03a20bb4e/light_curve_measurements.csv.",
+      "verified": false
+    },
+    {
+      "defect_id": "MED-01",
+      "severity": "MEDIUM",
+      "file_path": "tests/test_basic.py",
+      "function_or_lines": "lines 1-13",
+      "observed_behaviour": "Contains 3 trivial tests asserting package version string and module importability.",
+      "reproduction_command": ".venv/bin/pytest tests/",
+      "scientific_consequence": "Test suite reports 100% PASS while all scientific computations are broken or mocked.",
+      "remedy": "Build comprehensive test suite testing actual transit fitting, BLS, and false positive rejection.",
+      "verified": true
+    },
+    {
+      "defect_id": "MED-02",
+      "severity": "MEDIUM",
+      "file_path": "src/planetfall/main.py",
+      "function_or_lines": "lines 33-45",
+      "observed_behaviour": "Instantiates 12 engine classes but executes only 4; 25 of 28 validation modules are dead code.",
+      "reproduction_command": "grep -n \"\\.run(\" src/planetfall/main.py",
+      "scientific_consequence": "Vast majority of purported validation checks are never run during candidate vetting.",
+      "remedy": "Integrate all active validation checks into the primary pipeline execution flow.",
+      "verified": true
+    },
+    {
+      "defect_id": "MED-03",
+      "severity": "MEDIUM",
+      "file_path": "pyproject.toml, requirements.txt",
+      "function_or_lines": "dependencies block",
+      "observed_behaviour": "Omits core runtime dependencies: photutils, scikit-image, astroquery, lightkurve, transitleastsquares, pytest.",
+      "reproduction_command": "cat pyproject.toml",
+      "scientific_consequence": "Fresh environment installation cannot execute photometry or astrometry scripts.",
+      "remedy": "Declare all required scientific packages under dependencies and optional test dependencies.",
+      "verified": true
+    },
+    {
+      "defect_id": "MED-04",
+      "severity": "MEDIUM",
+      "file_path": "pyproject.toml",
+      "function_or_lines": "dependencies block",
+      "observed_behaviour": "Declares unpinned dependencies without upper or lower version bounds.",
+      "reproduction_command": "cat pyproject.toml",
+      "scientific_consequence": "Vulnerable to breaking API changes in upstream libraries (e.g. numpy 2.0 vs 1.x).",
+      "remedy": "Pin compatible version ranges for all dependencies.",
+      "verified": true
+    },
+    {
+      "defect_id": "LOW-01",
+      "severity": "LOW",
+      "file_path": "requirements.txt",
+      "function_or_lines": "line 6",
+      "observed_behaviour": "Declares 'argparse' as an external dependency despite being in Python standard library.",
+      "reproduction_command": "grep \"argparse\" requirements.txt",
+      "scientific_consequence": "Harmless redundancy, causes warnings on modern pip.",
+      "remedy": "Remove argparse from requirements.txt.",
+      "verified": true
+    },
+    {
+      "defect_id": "LOW-02",
+      "severity": "LOW",
+      "file_path": "src/planetfall/modules/hostile_referee_council.py, referee_panel.py",
+      "function_or_lines": "Entire modules",
+      "observed_behaviour": "Two duplicate referee modules with slightly divergent canned text strings.",
+      "reproduction_command": "diff src/planetfall/modules/hostile_referee_council.py src/planetfall/modules/referee_panel.py",
+      "scientific_consequence": "Code duplication and maintenance confusion.",
+      "remedy": "Quarantine duplicate referee panel and retain single well-defined module.",
+      "verified": true
+    },
+    {
+      "defect_id": "LOW-03",
+      "severity": "LOW",
+      "file_path": "ROADMAP.md",
+      "function_or_lines": "line 7",
+      "observed_behaviour": "Claims active GitHub Actions CI/CD pipeline, but no .github directory exists.",
+      "reproduction_command": "ls -d .github",
+      "scientific_consequence": "Inaccurate documentation claim.",
+      "remedy": "Update documentation to reflect actual local and automated testing status.",
+      "verified": false
+    },
+    {
+      "defect_id": "INFO-01",
+      "severity": "INFORMATIONAL",
+      "file_path": "docs/introduction/Author's Note.md",
+      "function_or_lines": "lines 3-9",
+      "observed_behaviour": "Eloquent philosophical commitment to skepticism directly contradicted by code-level mock strings and label leakage.",
+      "reproduction_command": "head -n 20 \"docs/introduction/Author's Note.md\"",
+      "scientific_consequence": "Deep conceptual disconnect between intended research ethos and compromised implementation.",
+      "remedy": "Execute complete scientific reconstruction to bring implementation into full alignment with philosophical contract.",
+      "verified": false
+    }
+  ],
+  "entry_point_tests": [
+    {
+      "command": ".venv/bin/planetfall run --data_dir data",
+      "exit_code": 0,
+      "stdout": "============================================================\n PROJECT: OPERATION PLANETFALL \n 'Calibrated Skepticism: Discriminating Worlds from Artifacts' \n============================================================\nError during candidate harvesting: 'CandidateHarvester' object has no attribute 'run'",
+      "scientific_status": "BROKEN - AttributeError swallowed, exits with 0"
+    },
+    {
+      "command": ".venv/bin/planetfall validate test",
+      "exit_code": 0,
+      "stdout": "Validating candidate from test...\n-> VALIDATION: Logic for single candidate placeholder.",
+      "scientific_status": "BROKEN - Placeholder print statement"
+    },
+    {
+      "command": ".venv/bin/pytest tests/",
+      "exit_code": 0,
+      "passed": 3,
+      "failed": 0,
+      "scientific_status": "VACUOUS - Tests version and imports only"
+    }
+  ]
+}

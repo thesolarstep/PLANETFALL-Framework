@@ -1,0 +1,1973 @@
+{
+  "project": "PLANETFALL-Framework",
+  "phase": "Phase 0: Salvage, Recovery, and Baseline Preservation",
+  "file_count": 215,
+  "missing_dataset_count": 3,
+  "classification_summary": {
+    "RETAIN": 121,
+    "REPAIR": 32,
+    "REIMPLEMENT": 52,
+    "QUARANTINE": 10,
+    "UNAVAILABLE": 3
+  },
+  "inventory": [
+    {
+      "relative_path": ".gitignore",
+      "filename": ".gitignore",
+      "size_bytes": 769,
+      "sha256": "2582b1b41e297be87e7a692062343af82f683ad61129c2bad2d589fa0b20627a",
+      "line_count": 67,
+      "classification": "RETAIN",
+      "rationale": "Repository configuration, license, and public documentation"
+    },
+    {
+      "relative_path": "CITATION.md",
+      "filename": "CITATION.md",
+      "size_bytes": 716,
+      "sha256": "98ad9984f44781e88fe721d1a54a6fe277603121352f0ec8237f600c6ac58381",
+      "line_count": 20,
+      "classification": "RETAIN",
+      "rationale": "Repository configuration, license, and public documentation"
+    },
+    {
+      "relative_path": "CONTRIBUTING.md",
+      "filename": "CONTRIBUTING.md",
+      "size_bytes": 1265,
+      "sha256": "a3b73c990185cbfb1931b25d8782c12bfb8d15dfdb0c5cbb48229bb306c7e824",
+      "line_count": 22,
+      "classification": "RETAIN",
+      "rationale": "Repository configuration, license, and public documentation"
+    },
+    {
+      "relative_path": "LICENSE",
+      "filename": "LICENSE",
+      "size_bytes": 1074,
+      "sha256": "2f768900b6c7cf20de1c2d23bae7b1251f96bfe5447fe5dce09070d7584b86f0",
+      "line_count": 21,
+      "classification": "RETAIN",
+      "rationale": "Repository configuration, license, and public documentation"
+    },
+    {
+      "relative_path": "MIGRATION.md",
+      "filename": "MIGRATION.md",
+      "size_bytes": 1103,
+      "sha256": "0536982866c81f8e42512c8a69d1b3558af844570f814832528095960b323817",
+      "line_count": 25,
+      "classification": "RETAIN",
+      "rationale": "Repository configuration, license, and public documentation"
+    },
+    {
+      "relative_path": "README.md",
+      "filename": "README.md",
+      "size_bytes": 6678,
+      "sha256": "b934f99960a2bf3ebaa5b3a5bb4c3492e9736351bc63c383191fe32dcf7af7c0",
+      "line_count": 131,
+      "classification": "RETAIN",
+      "rationale": "Repository configuration, license, and public documentation"
+    },
+    {
+      "relative_path": "ROADMAP.md",
+      "filename": "ROADMAP.md",
+      "size_bytes": 882,
+      "sha256": "62e46a48a34f9dd8aad0bd51969add73d31c42584f522afc0c2f9e0fdd0bacd8",
+      "line_count": 26,
+      "classification": "RETAIN",
+      "rationale": "Repository configuration, license, and public documentation"
+    },
+    {
+      "relative_path": "audit-results/AUDIT_REPORT.md",
+      "filename": "AUDIT_REPORT.md",
+      "size_bytes": 12246,
+      "sha256": "be2a0cfe00ee6b35a665c5dc068ba0bb3ab4ed950b769646df2a1bdfad801f38",
+      "line_count": 99,
+      "classification": "RETAIN",
+      "rationale": "Prior independent audit reports, logs, and evidence baseline"
+    },
+    {
+      "relative_path": "audit-results/REMEDIATION_PLAN.md",
+      "filename": "REMEDIATION_PLAN.md",
+      "size_bytes": 15053,
+      "sha256": "d468cf0677811b78709ea0a64a11e3cf24374be4774a91049512f50f75211d48",
+      "line_count": 268,
+      "classification": "RETAIN",
+      "rationale": "Prior independent audit reports, logs, and evidence baseline"
+    },
+    {
+      "relative_path": "audit-results/baseline_results.json",
+      "filename": "baseline_results.json",
+      "size_bytes": 7105,
+      "sha256": "85fb90236f506d565a6baf13face0d09ab28e79453b26b101c330c9f2c3f916f",
+      "line_count": 143,
+      "classification": "RETAIN",
+      "rationale": "Prior independent audit reports, logs, and evidence baseline"
+    },
+    {
+      "relative_path": "audit-results/data_provenance.csv",
+      "filename": "data_provenance.csv",
+      "size_bytes": 12203,
+      "sha256": "1a88b7da5c7b5f57673a9514856173f80e3abd368f1ed9559a81b3565104a106",
+      "line_count": 27,
+      "classification": "RETAIN",
+      "rationale": "Prior independent audit reports, logs, and evidence baseline"
+    },
+    {
+      "relative_path": "audit-results/dependency_audit.json",
+      "filename": "dependency_audit.json",
+      "size_bytes": 7284,
+      "sha256": "0c7aab8d07810a8ae7785a8e7ed497b3a4fd88aad5610b6b6b8b8fd9e686d302",
+      "line_count": 178,
+      "classification": "RETAIN",
+      "rationale": "Prior independent audit reports, logs, and evidence baseline"
+    },
+    {
+      "relative_path": "audit-results/execution_log.md",
+      "filename": "execution_log.md",
+      "size_bytes": 16022,
+      "sha256": "8c00c7279e3056b0c13dd31971329436d650eb94085c013456ea2b96b61f7da5",
+      "line_count": 317,
+      "classification": "RETAIN",
+      "rationale": "Prior independent audit reports, logs, and evidence baseline"
+    },
+    {
+      "relative_path": "audit-results/file_inventory.csv",
+      "filename": "file_inventory.csv",
+      "size_bytes": 71941,
+      "sha256": "3ad82c6708c1d606a75d3972a627401b0e6f27fe68e27de4e71d93e07f77adb0",
+      "line_count": 210,
+      "classification": "RETAIN",
+      "rationale": "Prior independent audit reports, logs, and evidence baseline"
+    },
+    {
+      "relative_path": "audit-results/scientific_integrity_findings.md",
+      "filename": "scientific_integrity_findings.md",
+      "size_bytes": 28348,
+      "sha256": "ff164e1465fbee98cc63ce06e2d54174ee810fdf2767ff65774ec2ed7d5a4cf9",
+      "line_count": 381,
+      "classification": "RETAIN",
+      "rationale": "Prior independent audit reports, logs, and evidence baseline"
+    },
+    {
+      "relative_path": "audit-results/workflow_map.md",
+      "filename": "workflow_map.md",
+      "size_bytes": 15524,
+      "sha256": "d6becaee0e5f7baac5262353742f054e4bf399760b6a7b81d5b563ce14e9bfa5",
+      "line_count": 265,
+      "classification": "RETAIN",
+      "rationale": "Prior independent audit reports, logs, and evidence baseline"
+    },
+    {
+      "relative_path": "docs/architecture.md",
+      "filename": "architecture.md",
+      "size_bytes": 1252,
+      "sha256": "4b90aa762094960d9f028ce24f13dbfd00ce84abbeb6e44e91e21768d0d92855",
+      "line_count": 24,
+      "classification": "RETAIN",
+      "rationale": "Project documentation, architecture guides, and philosophical framing"
+    },
+    {
+      "relative_path": "docs/installation.md",
+      "filename": "installation.md",
+      "size_bytes": 301,
+      "sha256": "00a2874f71528e36381b6a1dffef9dd5f70b792e63b100bf9c58acff3522d1f1",
+      "line_count": 22,
+      "classification": "RETAIN",
+      "rationale": "Project documentation, architecture guides, and philosophical framing"
+    },
+    {
+      "relative_path": "docs/introduction/Author's Note.md",
+      "filename": "Author's Note.md",
+      "size_bytes": 1333,
+      "sha256": "9799ddc567974e5fab3d27f11dc3347e098e6e6c0c4f570d9634733fefdc95ba",
+      "line_count": 21,
+      "classification": "RETAIN",
+      "rationale": "Project documentation, architecture guides, and philosophical framing"
+    },
+    {
+      "relative_path": "docs/introduction/README.md",
+      "filename": "README.md",
+      "size_bytes": 2473,
+      "sha256": "7bf4915e13237aa3844205176d2c42a0426add99255a2d5249292a8574579e0b",
+      "line_count": 53,
+      "classification": "RETAIN",
+      "rationale": "Project documentation, architecture guides, and philosophical framing"
+    },
+    {
+      "relative_path": "docs/philosophy.md",
+      "filename": "philosophy.md",
+      "size_bytes": 988,
+      "sha256": "4ccf15926b68ef3a484d1ab98743f33fe79d6b83443a3bc7637ae61054106ed5",
+      "line_count": 14,
+      "classification": "RETAIN",
+      "rationale": "Project documentation, architecture guides, and philosophical framing"
+    },
+    {
+      "relative_path": "docs/quickstart.md",
+      "filename": "quickstart.md",
+      "size_bytes": 622,
+      "sha256": "c3a991b374ab2f7889b0db9574c4146547cb817bfd2a5e7645ed68e34e3ee357",
+      "line_count": 23,
+      "classification": "RETAIN",
+      "rationale": "Project documentation, architecture guides, and philosophical framing"
+    },
+    {
+      "relative_path": "docs/workflow.md",
+      "filename": "workflow.md",
+      "size_bytes": 855,
+      "sha256": "4adc4c96074c81b1fe927a26b2896a21ac438cc38be89dda586fbbf1c97d4f6e",
+      "line_count": 20,
+      "classification": "RETAIN",
+      "rationale": "Project documentation, architecture guides, and philosophical framing"
+    },
+    {
+      "relative_path": "photometry_analysis/analysis_results/final_light_curve.csv",
+      "filename": "final_light_curve.csv",
+      "size_bytes": 357,
+      "sha256": "159738e7c235041b4b167c1573706980c048e001330dd5602ae7117e396f71e1",
+      "line_count": 13,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/analysis_results/light_curve.png",
+      "filename": "light_curve.png",
+      "size_bytes": 80777,
+      "sha256": "abf2e2f8bf4bac963fc4468329482f88293169383f89c6a791e86b40f153e2b6",
+      "line_count": 496,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/analysis_results/light_curve_final.png",
+      "filename": "light_curve_final.png",
+      "size_bytes": 46565,
+      "sha256": "7258d462ce6e2da6f35ec5b145f0b0ed63c0352eefc4a9e39b41b30d580d77cf",
+      "line_count": 286,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/analysis_results/light_curve_v2.png",
+      "filename": "light_curve_v2.png",
+      "size_bytes": 69689,
+      "sha256": "684ae7d13e0c13fbd564282fc98eb9fde3439105fdbcbb8105bce79326b21448",
+      "line_count": 477,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/analysis_results/light_curve_v3.png",
+      "filename": "light_curve_v3.png",
+      "size_bytes": 39778,
+      "sha256": "263b64799e8b00f21efdedbf517b1fd61a2f6c7c420fc4b221094f4ca7c9a779",
+      "line_count": 190,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/analysis_results/photometry.csv",
+      "filename": "photometry.csv",
+      "size_bytes": 1385,
+      "sha256": "94f02775abeffcf24286898f8ff7f3bb1015869a221746cbd2399ff883f42183",
+      "line_count": 14,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/analysis_results/photometry_v2.csv",
+      "filename": "photometry_v2.csv",
+      "size_bytes": 1356,
+      "sha256": "0c9bc10a9595bb47bd7ecca134977b3f2c281c74b06d8333bcac90fa164665e2",
+      "line_count": 14,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/analysis_results/photometry_v3.csv",
+      "filename": "photometry_v3.csv",
+      "size_bytes": 1249,
+      "sha256": "55841411ab93269004bf9fc5da07dcdf0f4e2f1bb29808abdd9ffc1e952a206b",
+      "line_count": 13,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/analysis_results/research_opportunities.md",
+      "filename": "research_opportunities.md",
+      "size_bytes": 2528,
+      "sha256": "9f107169522ad6ace3fec89cd9ab7f265764caefef34eca845084162f276c3fb",
+      "line_count": 31,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/astro.ipynb",
+      "filename": "astro.ipynb",
+      "size_bytes": 2923110,
+      "sha256": "840e79ac2154d9ae133d64e95c06f565e39659bf4c4f11e625cce37d60b1839f",
+      "line_count": 834,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/astrometry_validation/astrometric_audit.py",
+      "filename": "astrometric_audit.py",
+      "size_bytes": 4107,
+      "sha256": "8f6c577baa41fe2fd19ed22d5b58b07ee1344722cb412b74a85744370cef75ae",
+      "line_count": 93,
+      "classification": "REPAIR",
+      "rationale": "Photometry reduction script requiring input path and dependency fixes"
+    },
+    {
+      "relative_path": "photometry_analysis/astrometry_validation/astrometric_audit_v2.py",
+      "filename": "astrometric_audit_v2.py",
+      "size_bytes": 3757,
+      "sha256": "0be89e1acd19c215b47292c5c5e4d63dcbfefc01bd4a997f354944d769483418",
+      "line_count": 89,
+      "classification": "REPAIR",
+      "rationale": "Photometry reduction script requiring input path and dependency fixes"
+    },
+    {
+      "relative_path": "photometry_analysis/astrometry_validation/astrometric_audit_v3.py",
+      "filename": "astrometric_audit_v3.py",
+      "size_bytes": 4149,
+      "sha256": "cfa4601db31696d7da24507531c590dd1ff16965868ce53c47734120e8cbbb89",
+      "line_count": 94,
+      "classification": "REPAIR",
+      "rationale": "Photometry reduction script requiring input path and dependency fixes"
+    },
+    {
+      "relative_path": "photometry_analysis/astrometry_validation/astrometric_audit_v4.png",
+      "filename": "astrometric_audit_v4.png",
+      "size_bytes": 358126,
+      "sha256": "ce09b1144ceb6ad5dfc9c69819e12236724e705674574ca20b20bd62c12f07ee",
+      "line_count": 2338,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/astrometry_validation/astrometric_audit_v4.py",
+      "filename": "astrometric_audit_v4.py",
+      "size_bytes": 3373,
+      "sha256": "6a315bec7404a5e2928e057fdef1f6e9783a925d4a3d514fbe05ad2764929da3",
+      "line_count": 82,
+      "classification": "REPAIR",
+      "rationale": "Photometry reduction script requiring input path and dependency fixes"
+    },
+    {
+      "relative_path": "photometry_analysis/astrometry_validation/astrometric_matches.png",
+      "filename": "astrometric_matches.png",
+      "size_bytes": 366541,
+      "sha256": "8f7d7d523249f2768d638098518544140cdb2b60c07b954123da63b2d096355e",
+      "line_count": 2351,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/astrometry_validation/audit_report.md",
+      "filename": "audit_report.md",
+      "size_bytes": 440,
+      "sha256": "b6e52ed62722303a1878b801c236011ef008cd3c2662507ad8fa79e7cb97866b",
+      "line_count": 11,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/astrometry_validation/audit_report_v3.md",
+      "filename": "audit_report_v3.md",
+      "size_bytes": 796,
+      "sha256": "f141269e6ca1eace506bfa3e4116906a4f97f30483b290c6b6daf441379cbe9b",
+      "line_count": 18,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/astrometry_validation/audit_report_v4.md",
+      "filename": "audit_report_v4.md",
+      "size_bytes": 221,
+      "sha256": "c13aa99b8f1406d45298147930abe549cb990d45b65b1c1ba8409171ec524108",
+      "line_count": 4,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/astrometry_validation/validated_matches.png",
+      "filename": "validated_matches.png",
+      "size_bytes": 365151,
+      "sha256": "c213bc1c271d02ef118eabad7bdf88da67c55d5cebab03c647ffad086af110a0",
+      "line_count": 2239,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/registration_photometry/centroid_photometry.py",
+      "filename": "centroid_photometry.py",
+      "size_bytes": 3028,
+      "sha256": "53b511d87441d7372ff8600b73459ba76019dd3a691e18a9a9a5f8d503b98723",
+      "line_count": 75,
+      "classification": "REPAIR",
+      "rationale": "Photometry reduction script requiring input path and dependency fixes"
+    },
+    {
+      "relative_path": "photometry_analysis/registration_photometry/create_notebook.py",
+      "filename": "create_notebook.py",
+      "size_bytes": 8103,
+      "sha256": "cb9fd4232336f35a72a393fcc62b12792b11030fc4de38a3676c787168a65fc3",
+      "line_count": 239,
+      "classification": "REPAIR",
+      "rationale": "Photometry reduction script requiring input path and dependency fixes"
+    },
+    {
+      "relative_path": "photometry_analysis/registration_photometry/debug_registration.py",
+      "filename": "debug_registration.py",
+      "size_bytes": 393,
+      "sha256": "837d097daec17854534a4b845fe82171c08a32576c7435f1082dc9ba6d94960e",
+      "line_count": 13,
+      "classification": "REPAIR",
+      "rationale": "Photometry reduction script requiring input path and dependency fixes"
+    },
+    {
+      "relative_path": "photometry_analysis/registration_photometry/final_report_v2.md",
+      "filename": "final_report_v2.md",
+      "size_bytes": 1688,
+      "sha256": "477b8285cebb0f71d006ce67236cd5d0a21c6f13c9a757d97044f22f88939a7f",
+      "line_count": 22,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/registration_photometry/final_validated_lc.png",
+      "filename": "final_validated_lc.png",
+      "size_bytes": 47912,
+      "sha256": "4711334be926277d7cfdc950e26245049766ed724b3127d86d4ee6caa0efbc1f",
+      "line_count": 321,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/registration_photometry/manual_check.py",
+      "filename": "manual_check.py",
+      "size_bytes": 645,
+      "sha256": "d0b7c2d533911a24f2314e8c20d1e7cb5bca9dfd942fb2099b6e8ccbe9de03c3",
+      "line_count": 22,
+      "classification": "REPAIR",
+      "rationale": "Photometry reduction script requiring input path and dependency fixes"
+    },
+    {
+      "relative_path": "photometry_analysis/registration_photometry/robust_light_curve.png",
+      "filename": "robust_light_curve.png",
+      "size_bytes": 23423,
+      "sha256": "739c6f727423ef2be3a8994fe0548aed6f8c750f00863e039d1b99a8a424d774",
+      "line_count": 120,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/registration_photometry/robust_pipeline.ipynb",
+      "filename": "robust_pipeline.ipynb",
+      "size_bytes": 7970,
+      "sha256": "8de87f4c7732b66a61595ad42165c2b9446c1ad88649b5da801ab7a22c418388",
+      "line_count": 234,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/registration_photometry/robust_report.md",
+      "filename": "robust_report.md",
+      "size_bytes": 227,
+      "sha256": "6635eff1124636685b3fe974bcaad32b8a63edd7864b1c8f5905d3dbc3614b4e",
+      "line_count": 7,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/registration_photometry/run_robust_analysis.py",
+      "filename": "run_robust_analysis.py",
+      "size_bytes": 3782,
+      "sha256": "827e83d4acf95b65cfa8757830807b8078c9c7cb18ad65a4138d88349b070bac",
+      "line_count": 96,
+      "classification": "REPAIR",
+      "rationale": "Photometry reduction script requiring input path and dependency fixes"
+    },
+    {
+      "relative_path": "photometry_analysis/registration_photometry/run_robust_v2.py",
+      "filename": "run_robust_v2.py",
+      "size_bytes": 4138,
+      "sha256": "5cba266c70a84fd4ef8b4ca6d2616f738425c6221b2b9a390e63e03b69e4e72c",
+      "line_count": 104,
+      "classification": "REPAIR",
+      "rationale": "Photometry reduction script requiring input path and dependency fixes"
+    },
+    {
+      "relative_path": "photometry_analysis/registration_photometry/visual_check.png",
+      "filename": "visual_check.png",
+      "size_bytes": 225200,
+      "sha256": "30de1baec4c8f1955ba0514b095f5aa8d1be643d93e389dc3153c4fe25a4c8a8",
+      "line_count": 1516,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/rigorous_photometry/analysis_summary.md",
+      "filename": "analysis_summary.md",
+      "size_bytes": 196,
+      "sha256": "fca667faf42d73a3a4e6b7d87f73e03ae4adf6556980656acfad280cff7ca17b",
+      "line_count": 7,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/rigorous_photometry/data_inventory.csv",
+      "filename": "data_inventory.csv",
+      "size_bytes": 1720,
+      "sha256": "ac95da22b209d4f3a6d2db1ffcd4a01ce5a0928ac17b937cdcceb373c5bca984",
+      "line_count": 16,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/rigorous_photometry/failure_mode_diagnostics.png",
+      "filename": "failure_mode_diagnostics.png",
+      "size_bytes": 69127,
+      "sha256": "3fb3764bbf649765b7fa1f7a464516a0298d3297dd3dd9abd663e008b479184c",
+      "line_count": 437,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/rigorous_photometry/final_light_curve.png",
+      "filename": "final_light_curve.png",
+      "size_bytes": 41233,
+      "sha256": "843a575f4b6b1746637f6a531d846c335a1ea6b29589f60654ab097c70690c8a",
+      "line_count": 341,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/rigorous_photometry/final_report.md",
+      "filename": "final_report.md",
+      "size_bytes": 2330,
+      "sha256": "5da1e5e867a8463762acf3105ba6b18ea574f086a343e0b34bde1e28fecbaa9e",
+      "line_count": 40,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/rigorous_photometry/photometry_pipeline.ipynb",
+      "filename": "photometry_pipeline.ipynb",
+      "size_bytes": 12462,
+      "sha256": "b18bb2e8a58a92d927df9b42755dbd046c900794b396e75478c239d92e67337d",
+      "line_count": 360,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/serendipitous_analysis/final_serendipitous_report.md",
+      "filename": "final_serendipitous_report.md",
+      "size_bytes": 1286,
+      "sha256": "5ac26732e79836c61749fac2b374ebc0f5128ef7912c07545f276974b21a2538",
+      "line_count": 21,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/serendipitous_analysis/serendipitous_analysis.ipynb",
+      "filename": "serendipitous_analysis.ipynb",
+      "size_bytes": 15973,
+      "sha256": "3a1273f0e591d4876e993ed8605093cad848e64e667d7266400f52ab526840a5",
+      "line_count": 420,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "photometry_analysis/serendipitous_analysis/serendipitous_analysis_executed.ipynb",
+      "filename": "serendipitous_analysis_executed.ipynb",
+      "size_bytes": 700716,
+      "sha256": "16875a7a7c29951aa9934711b348b0e20b252fb9242564d76a3528385b96363f",
+      "line_count": 1440,
+      "classification": "RETAIN",
+      "rationale": "Historical photometric case study data and diagnostics"
+    },
+    {
+      "relative_path": "planetfall-validation-framework.zip",
+      "filename": "planetfall-validation-framework.zip",
+      "size_bytes": 5071896,
+      "sha256": "817064f15daea09d2cefd14b0fa0f2ef7b1d186ec01a230c6eb4d94afb9bf8c0",
+      "line_count": 37737,
+      "classification": "RETAIN",
+      "rationale": "Original unmodified source archive"
+    },
+    {
+      "relative_path": "pyproject.toml",
+      "filename": "pyproject.toml",
+      "size_bytes": 1040,
+      "sha256": "7dd6a2173061319d92f5928d2143c66b09e03f83f5f2463a104cd002a490b7c7",
+      "line_count": 46,
+      "classification": "REPAIR",
+      "rationale": "Dependency manifests missing core runtime and test packages, unpinned versions"
+    },
+    {
+      "relative_path": "requirements.txt",
+      "filename": "requirements.txt",
+      "size_bytes": 52,
+      "sha256": "d09344947a3464b98c7c5ebcefa8ab4dac4c9fe5f88430289b70678f1d07f169",
+      "line_count": 7,
+      "classification": "REPAIR",
+      "rationale": "Dependency manifests missing core runtime and test packages, unpinned versions"
+    },
+    {
+      "relative_path": "src/planetfall/__init__.py",
+      "filename": "__init__.py",
+      "size_bytes": 1331,
+      "sha256": "ea8306b519c1c66a2859a1a1ae483628661cb41f0bd173d5566e5d7b207cfa47",
+      "line_count": 33,
+      "classification": "REPAIR",
+      "rationale": "Package initialization requiring exported interfaces"
+    },
+    {
+      "relative_path": "src/planetfall/engines/__init__.py",
+      "filename": "__init__.py",
+      "size_bytes": 385,
+      "sha256": "b9b47783b20ee8da28e9d4f9509218fecaab987cc31de392c29e7e4210d536a3",
+      "line_count": 7,
+      "classification": "REIMPLEMENT",
+      "rationale": "Engine requiring authentic numerical / scientific implementation"
+    },
+    {
+      "relative_path": "src/planetfall/engines/calibration_engine.py",
+      "filename": "calibration_engine.py",
+      "size_bytes": 2076,
+      "sha256": "8015dc2a8084a96d5fb1c7db907ea6f90ae03d58ea4373502b988b0dac906d4a",
+      "line_count": 44,
+      "classification": "REIMPLEMENT",
+      "rationale": "Engine requiring authentic numerical / scientific implementation"
+    },
+    {
+      "relative_path": "src/planetfall/engines/injection_recovery.py",
+      "filename": "injection_recovery.py",
+      "size_bytes": 536,
+      "sha256": "5ddefff47075b701d72e24224247d93f64b926f3a6ed7f7bfcfffc4ebcc8b583",
+      "line_count": 13,
+      "classification": "REIMPLEMENT",
+      "rationale": "Core engine containing hardcoded outputs or candidate-specific golden fingerprints"
+    },
+    {
+      "relative_path": "src/planetfall/engines/novelty_engine.py",
+      "filename": "novelty_engine.py",
+      "size_bytes": 569,
+      "sha256": "845a0687563300999f53de934a788d9b3710e94679ca09807b6455eec173be19",
+      "line_count": 19,
+      "classification": "REIMPLEMENT",
+      "rationale": "Engine requiring authentic numerical / scientific implementation"
+    },
+    {
+      "relative_path": "src/planetfall/engines/planet_parameter_estimation.py",
+      "filename": "planet_parameter_estimation.py",
+      "size_bytes": 1009,
+      "sha256": "6d3e93e9a0c9a4790b7ad35f96dba67cbc42671729f898b07fe1a09e17652d32",
+      "line_count": 30,
+      "classification": "REIMPLEMENT",
+      "rationale": "Core engine containing hardcoded outputs or candidate-specific golden fingerprints"
+    },
+    {
+      "relative_path": "src/planetfall/engines/planetary_parameter_monte_carlo.py",
+      "filename": "planetary_parameter_monte_carlo.py",
+      "size_bytes": 1227,
+      "sha256": "b3aeefefa554e2a81154bb9eedf51f018e261b43f6be943be4253faa42259972",
+      "line_count": 29,
+      "classification": "REIMPLEMENT",
+      "rationale": "Core engine containing hardcoded outputs or candidate-specific golden fingerprints"
+    },
+    {
+      "relative_path": "src/planetfall/engines/signal_integrity.py",
+      "filename": "signal_integrity.py",
+      "size_bytes": 747,
+      "sha256": "b71d9b1dc9bd148582c3ade8377d5578bcd47fc4a7b9a59c970f9224d98f58ad",
+      "line_count": 18,
+      "classification": "REIMPLEMENT",
+      "rationale": "Engine requiring authentic numerical / scientific implementation"
+    },
+    {
+      "relative_path": "src/planetfall/engines/transit_fitting.py",
+      "filename": "transit_fitting.py",
+      "size_bytes": 722,
+      "sha256": "0b09a730ea374abe823cc30337cea766de982cc9dc1b183ce1d6cd1f0a66bf69",
+      "line_count": 18,
+      "classification": "REIMPLEMENT",
+      "rationale": "Core engine containing hardcoded outputs or candidate-specific golden fingerprints"
+    },
+    {
+      "relative_path": "src/planetfall/main.py",
+      "filename": "main.py",
+      "size_bytes": 5604,
+      "sha256": "2fd8cdeaced5ecf4d9927599687c41b446c961e1c1d9bfdce7934406685031c6",
+      "line_count": 151,
+      "classification": "REPAIR",
+      "rationale": "Primary CLI entry point containing label leakage, broken subcommands, and swallowed exceptions"
+    },
+    {
+      "relative_path": "src/planetfall/modules/__init__.py",
+      "filename": "__init__.py",
+      "size_bytes": 226,
+      "sha256": "22062f7d20f5270b74782c0ce84f01193556e9648271c8e658cda12dc9a9b629",
+      "line_count": 5,
+      "classification": "REPAIR",
+      "rationale": "Framework module needing functional integration"
+    },
+    {
+      "relative_path": "src/planetfall/modules/binary_tribunal.py",
+      "filename": "binary_tribunal.py",
+      "size_bytes": 2157,
+      "sha256": "05cb96d28dcd9191257c7da82a8362314be3acf00e28f4208eafcf28b6c0ec65",
+      "line_count": 54,
+      "classification": "REIMPLEMENT",
+      "rationale": "Tribunal engine presenting uncalibrated linear heuristic as probability"
+    },
+    {
+      "relative_path": "src/planetfall/modules/candidate_harvester.py",
+      "filename": "candidate_harvester.py",
+      "size_bytes": 1793,
+      "sha256": "be5c478a490c1eb38bf7d5c458c18f5c68af3b55ec368f5b305a334cfc3ee0a8",
+      "line_count": 42,
+      "classification": "REPAIR",
+      "rationale": "Candidate loader lacking run() method and requiring robust schema validation"
+    },
+    {
+      "relative_path": "src/planetfall/modules/hostile_referee_council.py",
+      "filename": "hostile_referee_council.py",
+      "size_bytes": 1900,
+      "sha256": "9d133d09548199d1c6bc4adedfb2b9b0a564bb91f61e6e5f8445ccef51c6d753",
+      "line_count": 33,
+      "classification": "QUARANTINE",
+      "rationale": "Redundant / canned text referee module"
+    },
+    {
+      "relative_path": "src/planetfall/modules/referee_panel.py",
+      "filename": "referee_panel.py",
+      "size_bytes": 2134,
+      "sha256": "e652eb6baa380e0b680b5b8d7246b73612fc95b4dfff12eef3f54c4c3f9aca2c",
+      "line_count": 37,
+      "classification": "QUARANTINE",
+      "rationale": "Redundant / canned text referee module"
+    },
+    {
+      "relative_path": "src/planetfall/modules/tribunal.py",
+      "filename": "tribunal.py",
+      "size_bytes": 3165,
+      "sha256": "51e289f0549f100f4316dc6f05ceb734238db4bd3319513aeb298cd11988ba27",
+      "line_count": 67,
+      "classification": "REIMPLEMENT",
+      "rationale": "Tribunal engine presenting uncalibrated linear heuristic as probability"
+    },
+    {
+      "relative_path": "src/planetfall/reporting/__init__.py",
+      "filename": "__init__.py",
+      "size_bytes": 39,
+      "sha256": "6e8b26909ac84d926b493801917f9b9028568df112959de4e0d7e7b515cc7cb4",
+      "line_count": 1,
+      "classification": "REIMPLEMENT",
+      "rationale": "Reporting engine containing fabricated mock plots"
+    },
+    {
+      "relative_path": "src/planetfall/reporting/reporting.py",
+      "filename": "reporting.py",
+      "size_bytes": 1282,
+      "sha256": "12f9266bab24a329c5abf1db8e5c36fb57862dcbb7afd4cf4278c8124d67f924",
+      "line_count": 41,
+      "classification": "REIMPLEMENT",
+      "rationale": "Reporting engine containing fabricated mock plots"
+    },
+    {
+      "relative_path": "src/planetfall/validators/__init__.py",
+      "filename": "__init__.py",
+      "size_bytes": 2471,
+      "sha256": "7b7893aac2c6d8980897b1ea674846dd55c0d917759b34134a8e58138b4a2bf9",
+      "line_count": 43,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/adversarial_ai_review.py",
+      "filename": "adversarial_ai_review.py",
+      "size_bytes": 2189,
+      "sha256": "6115e5e976ea9c581b0810dd67c95417391b9442c927e7dde8cae74915346db9",
+      "line_count": 37,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/adversarial_examples.py",
+      "filename": "adversarial_examples.py",
+      "size_bytes": 1116,
+      "sha256": "5b4b83d5a1a2de327bbc04e61c4f6666201bb1c207251e3465dcdf4b1f59b289",
+      "line_count": 17,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/benchmark_claim_audit.py",
+      "filename": "benchmark_claim_audit.py",
+      "size_bytes": 1504,
+      "sha256": "0bd484f7c991bfc672bb69bf6f3558c7f94954fd137ca04d88a0aa2727d52078",
+      "line_count": 23,
+      "classification": "QUARANTINE",
+      "rationale": "Deceptive validator producing canned claims of blinding or verification without computation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/benchmark_stress_test.py",
+      "filename": "benchmark_stress_test.py",
+      "size_bytes": 867,
+      "sha256": "54a97127b298b57fe77dc5fe942ab6ac1d4988c4e8079911e506480f0e7b9ee8",
+      "line_count": 15,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/blind_evaluation.py",
+      "filename": "blind_evaluation.py",
+      "size_bytes": 731,
+      "sha256": "293f74185aa235dfbf39eeed0f1532841f1dc718bd66b78b3ae260383941087e",
+      "line_count": 14,
+      "classification": "QUARANTINE",
+      "rationale": "Deceptive validator producing canned claims of blinding or verification without computation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/claim_destruction.py",
+      "filename": "claim_destruction.py",
+      "size_bytes": 1911,
+      "sha256": "f7a824e34760f93eaf0895e6b95d69381f34c1758f7c8e9b325cfb79de2a2c7a",
+      "line_count": 29,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/contamination_auditor.py",
+      "filename": "contamination_auditor.py",
+      "size_bytes": 518,
+      "sha256": "2b22522ba58206afeec692f8f7cb07d56c53d7a882d7a3d0b6eb2b4075e4feb6",
+      "line_count": 13,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/contamination_nightmare_scenarios.py",
+      "filename": "contamination_nightmare_scenarios.py",
+      "size_bytes": 1111,
+      "sha256": "1f146b9ec5e16b2b549fd2cc38332e191eed752ad4d5877da074a8496120b77d",
+      "line_count": 19,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/detrending_torture.py",
+      "filename": "detrending_torture.py",
+      "size_bytes": 623,
+      "sha256": "3d0ccd1c95b504c9d860e16291fd75b66e01165b918e1c410f0d434602d2cd2b",
+      "line_count": 15,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/discovery_claim_audit.py",
+      "filename": "discovery_claim_audit.py",
+      "size_bytes": 1065,
+      "sha256": "7275abc935133db713b405dbe2a1a0f3794e9ae46084132e4fb7121ce3c12b67",
+      "line_count": 18,
+      "classification": "QUARANTINE",
+      "rationale": "Deceptive validator producing canned claims of blinding or verification without computation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/discovery_readiness_score.py",
+      "filename": "discovery_readiness_score.py",
+      "size_bytes": 717,
+      "sha256": "35d933e9c85b916aa299e7a4ffa79be515c3b7f1ed2852908781849cef14a417",
+      "line_count": 24,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/exofop_investigation.py",
+      "filename": "exofop_investigation.py",
+      "size_bytes": 925,
+      "sha256": "6124d3449d4499ed2f1f08fdd6366d327e8895c4647075836d1284e1ca4d4427",
+      "line_count": 26,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/external_pipeline_replication.py",
+      "filename": "external_pipeline_replication.py",
+      "size_bytes": 894,
+      "sha256": "07d8c6ab72417a4462872929de4ea2fab5d086eec2917140e27ea2c5d80b409a",
+      "line_count": 19,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/external_reproducibility_challenge.py",
+      "filename": "external_reproducibility_challenge.py",
+      "size_bytes": 1072,
+      "sha256": "43c699a22a3c2f01394326cac8a5f320f53aa9e03d23e64058d5128ab7be8239",
+      "line_count": 19,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/feature_ablation.py",
+      "filename": "feature_ablation.py",
+      "size_bytes": 894,
+      "sha256": "27517d6b80b45672000c3f8e449d1a8674f163d295e3122e7d56b279039f737e",
+      "line_count": 16,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/gaia_contamination_assault.py",
+      "filename": "gaia_contamination_assault.py",
+      "size_bytes": 885,
+      "sha256": "572ff38141069223b353b493128864c81658e0c995b062b4cb7eccbab317aa07",
+      "line_count": 24,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/holdout_universe_test.py",
+      "filename": "holdout_universe_test.py",
+      "size_bytes": 982,
+      "sha256": "b0e179d42718e87beb3917f8f576ed8ed8b3534e5aaa65489439077fe0b8534e",
+      "line_count": 21,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/independent_fp_assessment.py",
+      "filename": "independent_fp_assessment.py",
+      "size_bytes": 984,
+      "sha256": "4eae7e69b5956dc3fa31c28c99d5af6b8daaaf051351f74e61096a558600df73",
+      "line_count": 19,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/known_answer_calibration.py",
+      "filename": "known_answer_calibration.py",
+      "size_bytes": 1053,
+      "sha256": "a5b381ffdd838ad2ef6800a9cd5c0127348413faf1187dcad6e15a6a5d32d346",
+      "line_count": 25,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/known_planet_check.py",
+      "filename": "known_planet_check.py",
+      "size_bytes": 472,
+      "sha256": "ece8e64c9e91fd906f1085715e99a9edd5eaafa66680ac58bb778b4a1b9080dc",
+      "line_count": 13,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/label_leakage_investigation.py",
+      "filename": "label_leakage_investigation.py",
+      "size_bytes": 1013,
+      "sha256": "5b40217ffaa0565bbf13f3bffd1028f3f79fcf33025d0003be206c2edce119fb",
+      "line_count": 17,
+      "classification": "QUARANTINE",
+      "rationale": "Deceptive validator producing canned claims of blinding or verification without computation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/literature_executioner.py",
+      "filename": "literature_executioner.py",
+      "size_bytes": 838,
+      "sha256": "d130b2a1923f74b10291d61c21da46151022c9cbdeb571b46b935791bc9409f4",
+      "line_count": 21,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/multi_sector_retrial.py",
+      "filename": "multi_sector_retrial.py",
+      "size_bytes": 734,
+      "sha256": "fe2085eaf23078dfad17c600dc17ada83decdb3682fc8f11018daf2f2d71fe66",
+      "line_count": 18,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/novelty_investigation.py",
+      "filename": "novelty_investigation.py",
+      "size_bytes": 1019,
+      "sha256": "00db5835fcd1bd37045218800a0549c3fca59c57980e5cb670058f737cff98d7",
+      "line_count": 24,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/parameter_perturbation_assault.py",
+      "filename": "parameter_perturbation_assault.py",
+      "size_bytes": 1028,
+      "sha256": "2be078f892c0eee039e15ae5beb4e0acf8400cd4f3515cd879430b9d365baeee",
+      "line_count": 19,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/pipeline_diversity_test.py",
+      "filename": "pipeline_diversity_test.py",
+      "size_bytes": 924,
+      "sha256": "f4ff14e601e91d1a37e0a0f835dea4e341fa6104a64d1e433259854e891bff86",
+      "line_count": 18,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/pipeline_independence_test.py",
+      "filename": "pipeline_independence_test.py",
+      "size_bytes": 870,
+      "sha256": "431f984045682265ce2a3574e63d623038e68215f3fb2b1b43d89d746dac2792",
+      "line_count": 19,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/professional_astronomer_test.py",
+      "filename": "professional_astronomer_test.py",
+      "size_bytes": 983,
+      "sha256": "2627f38c0625f58174478dcab6ca845a4547d515527fd6ed8dc420c92802c729",
+      "line_count": 17,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/publication_readiness.py",
+      "filename": "publication_readiness.py",
+      "size_bytes": 1213,
+      "sha256": "8e858a8978e3a53d869bc39f926c36b6ed537ebd332dce18e60be8176cd2be75",
+      "line_count": 36,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/randomization_test.py",
+      "filename": "randomization_test.py",
+      "size_bytes": 838,
+      "sha256": "692c307e78b779d99bb18d907749a6b9accfefc359696473ed33bde26a1d2bc3",
+      "line_count": 16,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/raw_data_reconstruction.py",
+      "filename": "raw_data_reconstruction.py",
+      "size_bytes": 854,
+      "sha256": "4adda55f65d2bdfacb2331e7861d744af840753bd42b80a0cfae450f3ecabff1",
+      "line_count": 18,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/reality_score.py",
+      "filename": "reality_score.py",
+      "size_bytes": 760,
+      "sha256": "7854de8c9abd90933f5139340f2d91b6f9b424b04f2b75d5dbd283e7a30c30bd",
+      "line_count": 23,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/red_team_review.py",
+      "filename": "red_team_review.py",
+      "size_bytes": 1533,
+      "sha256": "97b0f0da213ff05f24952645e304b1e51d14fad751f082d5984d1449303153f0",
+      "line_count": 28,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/red_team_statistical_audit.py",
+      "filename": "red_team_statistical_audit.py",
+      "size_bytes": 1392,
+      "sha256": "2b057514f4825890de6ae627d6f9cb28be49c0dd6888b47588ce4c05e3f62d57",
+      "line_count": 19,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/reproducibility_audit.py",
+      "filename": "reproducibility_audit.py",
+      "size_bytes": 946,
+      "sha256": "2a032785f67b73a8695dcf5cfc25d12dbf2fe806a13157f80b6c5652dfb5da8d",
+      "line_count": 16,
+      "classification": "QUARANTINE",
+      "rationale": "Deceptive validator producing canned claims of blinding or verification without computation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/sector_survival.py",
+      "filename": "sector_survival.py",
+      "size_bytes": 574,
+      "sha256": "6f798cf40d6ba818b1fe83aa5cf05fa55d8a09a95ef848603ea0ed05064fe215",
+      "line_count": 14,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/shape_forensics.py",
+      "filename": "shape_forensics.py",
+      "size_bytes": 929,
+      "sha256": "5d84f433d709ee59ffdf1309a7ea633308b789569df6e0feae8e7bf5e0faaac8",
+      "line_count": 25,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/stellar_background_check.py",
+      "filename": "stellar_background_check.py",
+      "size_bytes": 649,
+      "sha256": "036d640679447f024b8e12c79c17d30c35b3025de11136f7da29e8089d67db0b",
+      "line_count": 16,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/stellar_parameter_audit.py",
+      "filename": "stellar_parameter_audit.py",
+      "size_bytes": 1024,
+      "sha256": "c8c9d9180eb3e90f3f0f68e6717899e312693794f4ff5a52b97fec6f05c63d67",
+      "line_count": 21,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/stellar_sanity_check.py",
+      "filename": "stellar_sanity_check.py",
+      "size_bytes": 1072,
+      "sha256": "cee977af2a6cb903cbc4b491055b70b9579460c9ceb045c870ba7f490bc40f70",
+      "line_count": 25,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/uncertainty_assault.py",
+      "filename": "uncertainty_assault.py",
+      "size_bytes": 1051,
+      "sha256": "e0562ba97882b49d68f4e190a7ae6d101b93a80ff358b5d97c8e13bd33506b70",
+      "line_count": 24,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/vespa_fp_analysis.py",
+      "filename": "vespa_fp_analysis.py",
+      "size_bytes": 874,
+      "sha256": "fde17ae93c8e9f82ff65d174335ffc646c17adb093ab41c842ba8ed0d479beb9",
+      "line_count": 26,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "src/planetfall/validators/zero_knowledge_reconstruction.py",
+      "filename": "zero_knowledge_reconstruction.py",
+      "size_bytes": 991,
+      "sha256": "9781370760ebeb5724ba34d5e198e712d957254d2901b2be0dc3d312b877956c",
+      "line_count": 20,
+      "classification": "REIMPLEMENT",
+      "rationale": "Validator containing fabricated outputs or unexecuted logic needing authentic implementation"
+    },
+    {
+      "relative_path": "tests/test_basic.py",
+      "filename": "test_basic.py",
+      "size_bytes": 378,
+      "sha256": "3f5784ce429f61ee16c71abad8d6d74b23276665488ff60f3c2ca2be26dfa5a4",
+      "line_count": 13,
+      "classification": "REIMPLEMENT",
+      "rationale": "Vacuous baseline tests asserting only package version and trivial imports"
+    },
+    {
+      "relative_path": "variable_star_pipeline/analyze_candidate_1.py",
+      "filename": "analyze_candidate_1.py",
+      "size_bytes": 2636,
+      "sha256": "c113ba3b0002aeda0e0414979af62c2e5bd12b7a57b76a0188d652ce56033c2f",
+      "line_count": 77,
+      "classification": "REPAIR",
+      "rationale": "Historical pipeline script requiring database path fixes or algorithmic updates"
+    },
+    {
+      "relative_path": "variable_star_pipeline/analyze_candidate_2.py",
+      "filename": "analyze_candidate_2.py",
+      "size_bytes": 1230,
+      "sha256": "65e900484cb3944a8fd906f8aad65df7e6c872ac6291dc2d87d6d8a52c912388",
+      "line_count": 40,
+      "classification": "REPAIR",
+      "rationale": "Historical pipeline script requiring database path fixes or algorithmic updates"
+    },
+    {
+      "relative_path": "variable_star_pipeline/analyze_candidate_2_tribunal.py",
+      "filename": "analyze_candidate_2_tribunal.py",
+      "size_bytes": 2348,
+      "sha256": "a0629c48753a75ef3a401ae19d59970043977fa8772ff5b7abd6d83a0b60b44e",
+      "line_count": 62,
+      "classification": "REPAIR",
+      "rationale": "Historical pipeline script requiring database path fixes or algorithmic updates"
+    },
+    {
+      "relative_path": "variable_star_pipeline/audit_report.md",
+      "filename": "audit_report.md",
+      "size_bytes": 3629,
+      "sha256": "76a77011fd12e19aa2041984c41c66dd2c2bdfbb2d30caf8f593a37f27679f66",
+      "line_count": 42,
+      "classification": "RETAIN",
+      "rationale": "Historical pipeline documentation and reports"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/120f4683-9a1c-517b-8cfc-111eefa38875/execution_report.md",
+      "filename": "execution_report.md",
+      "size_bytes": 1189,
+      "sha256": "73d3bda81e42c62f7ca051ea7755ee1076df78f52162be304e0b8735ba15f3ef",
+      "line_count": 24,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/120f4683-9a1c-517b-8cfc-111eefa38875/initial_metadata.csv",
+      "filename": "initial_metadata.csv",
+      "size_bytes": 1193,
+      "sha256": "32f9bfac5133bd62dbfee5eae70166e00ab323104d9ab5de1b7738c7adf230b1",
+      "line_count": 2,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/candidate_2_casefile.md",
+      "filename": "candidate_2_casefile.md",
+      "size_bytes": 1828,
+      "sha256": "bc56173d8350808b57675dd0d7f1a03b1f1ad8ddc2a1047a9dbd6e4450c03485",
+      "line_count": 38,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/catalog_execution_report.md",
+      "filename": "catalog_execution_report.md",
+      "size_bytes": 1301,
+      "sha256": "1fd84ff39c2ffa003ed9891bc609feb90318a0f091223326d5a484f4eaa1c701",
+      "line_count": 21,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/classification_report.md",
+      "filename": "classification_report.md",
+      "size_bytes": 1153,
+      "sha256": "15585bc1e17eddea46f5cdfacb5c42ee8ca36f0a90afd9fc2bbfe1d037e53995",
+      "line_count": 20,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/contamination_report.md",
+      "filename": "contamination_report.md",
+      "size_bytes": 882,
+      "sha256": "bbecfedf487bdb0b14332c97c21bcd58a8220dc8b459a8bab1d420edce719c7c",
+      "line_count": 15,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/discovery_tribunal.md",
+      "filename": "discovery_tribunal.md",
+      "size_bytes": 1428,
+      "sha256": "7c64c2eb9cd77d61978903f078a00dcc47dc4faee20d7e837a338e4518b11cfe",
+      "line_count": 28,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/folding_tribunal.md",
+      "filename": "folding_tribunal.md",
+      "size_bytes": 1014,
+      "sha256": "c2d2ccf907d947f54d84899783f4aaf6e311fa910b011dbddb8c031b5e4a765b",
+      "line_count": 15,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/identity_metadata.csv",
+      "filename": "identity_metadata.csv",
+      "size_bytes": 1550,
+      "sha256": "f88ea5165fb22eb3c4ec95fe0516794c27dc30795636dd72c48ea205b712a1a8",
+      "line_count": 2,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/identity_report.md",
+      "filename": "identity_report.md",
+      "size_bytes": 935,
+      "sha256": "8794866babde3dddb6eb514681c2dabe08eed8f63be04adc759b5ddb47f2507c",
+      "line_count": 23,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/light_curve_measurements.csv",
+      "filename": "light_curve_measurements.csv",
+      "size_bytes": 7272,
+      "sha256": "bf756ffd14011b0ba401ad05031bb0aeee11713b4d99a9cfba13b32077895a99",
+      "line_count": 165,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/long_periodogram.png",
+      "filename": "long_periodogram.png",
+      "size_bytes": 24379,
+      "sha256": "bca3c9455d2c74ded3fba9a45982fe559f78ddc170dc88d0a408b06c7dff322b",
+      "line_count": 201,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/period_tribunal.md",
+      "filename": "period_tribunal.md",
+      "size_bytes": 1002,
+      "sha256": "d95dba44c48a9eba4525dcc7b72dfaee1dc19fd1fd8082996d88fb20190c6162",
+      "line_count": 30,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/photometry_audit.md",
+      "filename": "photometry_audit.md",
+      "size_bytes": 1039,
+      "sha256": "d4e9ae37d5ae7e7636ba58af0152616822566d9130a27e005e7347b75a45082e",
+      "line_count": 16,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/plot_folded_0.3450.png",
+      "filename": "plot_folded_0.3450.png",
+      "size_bytes": 20278,
+      "sha256": "e4071578a8e7ed586a8d562e94c301c9fa02885f0734123fa66e8216e5ef7b69",
+      "line_count": 98,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/plot_folded_1.0011.png",
+      "filename": "plot_folded_1.0011.png",
+      "size_bytes": 20540,
+      "sha256": "7558bdb6de24b7b77449d4d4e36fe3634bac9abf2f5c38d64571393c4a5dbb87",
+      "line_count": 159,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/plot_folded_78.4877.png",
+      "filename": "plot_folded_78.4877.png",
+      "size_bytes": 20960,
+      "sha256": "1205a0548d5426230675b0cfd75a5f5eefae3bed3bd1ab343fd0c56f5f2f4997",
+      "line_count": 121,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/plot_phase_folded.png",
+      "filename": "plot_phase_folded.png",
+      "size_bytes": 19802,
+      "sha256": "f595332671db5a4eb6ec79407e689197d9141c3459c7506de06f6996f2e05a85",
+      "line_count": 97,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/plot_raw.png",
+      "filename": "plot_raw.png",
+      "size_bytes": 25068,
+      "sha256": "70f003bd441c2e63df19e785a39ba5c7aa3c9a233cad204308a17f23e83534ae",
+      "line_count": 113,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/raw_lightcurve.png",
+      "filename": "raw_lightcurve.png",
+      "size_bytes": 25068,
+      "sha256": "70f003bd441c2e63df19e785a39ba5c7aa3c9a233cad204308a17f23e83534ae",
+      "line_count": 113,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/raw_lightcurve_v2.png",
+      "filename": "raw_lightcurve_v2.png",
+      "size_bytes": 23675,
+      "sha256": "08b21bcaa1a4815914782fb992fd642f7d63a868a4429e382bf1f71aaa5c56dd",
+      "line_count": 104,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/test_fold_0345.png",
+      "filename": "test_fold_0345.png",
+      "size_bytes": 25290,
+      "sha256": "cac083dec46274b28ad88f93b2f3550f3e7fc9610d6e069a607dfe6ce27dbdbe",
+      "line_count": 165,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/test_fold_78.png",
+      "filename": "test_fold_78.png",
+      "size_bytes": 25897,
+      "sha256": "68ae539f421c47301e9e2103ead91ea8dfc2e1d1c7cb25a3098c9cd314b03d49",
+      "line_count": 163,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/2514cd3c-f031-557d-b251-629a5efa2362/test_fold_half.png",
+      "filename": "test_fold_half.png",
+      "size_bytes": 24914,
+      "sha256": "99195bc62ad3a00c2ab321a2c676b9d7c279c2fc3bc692ba5c00d86c5e0545d3",
+      "line_count": 206,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/3996c5ad_execution_report.md",
+      "filename": "3996c5ad_execution_report.md",
+      "size_bytes": 1502,
+      "sha256": "fcab1382a5ae392d0fbbd2c8b29d8ef7ac3229f716530aeb28bbe5c2ce74b486",
+      "line_count": 24,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/3996c5ad_fold_best.png",
+      "filename": "3996c5ad_fold_best.png",
+      "size_bytes": 26886,
+      "sha256": "9fb8d6d114ee43389527ef8198d5f0b2714135672518a41853349dfd673876b2",
+      "line_count": 178,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/3996c5ad_fold_short.png",
+      "filename": "3996c5ad_fold_short.png",
+      "size_bytes": 24126,
+      "sha256": "46dd9f50c6aa9d97385e2234555a9532e141521c256102cfa4df495b40bd54d4",
+      "line_count": 145,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/3996c5ad_light_curve.csv",
+      "filename": "3996c5ad_light_curve.csv",
+      "size_bytes": 16702,
+      "sha256": "6676e124ad85ea3408fdc95cc3b8a98cdf3ca3de525c27f0dc5900692c8be313",
+      "line_count": 393,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/3996c5ad_metadata.csv",
+      "filename": "3996c5ad_metadata.csv",
+      "size_bytes": 517,
+      "sha256": "c49b348c9a5c5a5d1f3fb6081752edb671df0572278911845ce756a6c2f5e813",
+      "line_count": 2,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/3996c5ad_period_tribunal.md",
+      "filename": "3996c5ad_period_tribunal.md",
+      "size_bytes": 915,
+      "sha256": "2556c9f213854ec7fba316ceff81de10865a50d1fe0c6c3728ae82728a6217ab",
+      "line_count": 26,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/3996c5ad_tribunal.py",
+      "filename": "3996c5ad_tribunal.py",
+      "size_bytes": 2531,
+      "sha256": "22680d84fb2f2281597d3824f5cc78cfb9f3243890b3394e08ff830f6cccc47d",
+      "line_count": 71,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/853811d6_execution_report.md",
+      "filename": "853811d6_execution_report.md",
+      "size_bytes": 1209,
+      "sha256": "f53d4c6e03ae420c52b0c568e2c93acb7db0d5edc36be98733e66960cc48212d",
+      "line_count": 22,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/853811d6_folded.png",
+      "filename": "853811d6_folded.png",
+      "size_bytes": 27936,
+      "sha256": "49eb6fd9fdc1aa8b08f89bde75c4058ad856b59523d19e1bd134c5581d3e67a2",
+      "line_count": 142,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/853811d6_light_curve.csv",
+      "filename": "853811d6_light_curve.csv",
+      "size_bytes": 5242,
+      "sha256": "dd4d52cf9fde4c10a835b6d1eb4ce75f87553eb5650f077dc7b94cd4c6cac559",
+      "line_count": 121,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/853811d6_metadata.csv",
+      "filename": "853811d6_metadata.csv",
+      "size_bytes": 565,
+      "sha256": "cfe043cd200f915f94b2ffc8b7c001d2320c7921d515f1671e3c7df2f117dad9",
+      "line_count": 2,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/853811d6_periodogram.md.png",
+      "filename": "853811d6_periodogram.md.png",
+      "size_bytes": 42914,
+      "sha256": "4072395a6d203dd09d5cb31c6990ecb56a426fa122ba694cf919f89d0ddcb663",
+      "line_count": 263,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/853811d6_raw.png",
+      "filename": "853811d6_raw.png",
+      "size_bytes": 21159,
+      "sha256": "ed04d5ade666043cf25c5ef16586701ca4c6e8b76580db554ba36773603a8dde",
+      "line_count": 96,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/9c44d67a-14fb-5f1a-ac17-65a03a20bb4e/catalog_metadata.csv",
+      "filename": "catalog_metadata.csv",
+      "size_bytes": 1229,
+      "sha256": "f0b5a20e24e4c3ccb6dbb56333ab09cb4435db4cc18c119777432870e5e9232a",
+      "line_count": 2,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/9c44d67a-14fb-5f1a-ac17-65a03a20bb4e/cross_match_results.csv",
+      "filename": "cross_match_results.csv",
+      "size_bytes": 465,
+      "sha256": "11fa09b2738b54cb322a20d1b037e2a26f7b35157f62e13bd159b7d0496dee3c",
+      "line_count": 5,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/9c44d67a-14fb-5f1a-ac17-65a03a20bb4e/investigation_report.md",
+      "filename": "investigation_report.md",
+      "size_bytes": 2607,
+      "sha256": "ce87623c19f91a640a1eb6d36d7c2ffecca558b5a0472e217361992ae3748d0d",
+      "line_count": 35,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/9c44d67a-14fb-5f1a-ac17-65a03a20bb4e/light_curve_measurements.csv",
+      "filename": "light_curve_measurements.csv",
+      "size_bytes": 1556,
+      "sha256": "539db44a0f4d4d187b5976ca17595f791f5fd71ba5fcf79800bb9480835468d3",
+      "line_count": 36,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/9c44d67a-14fb-5f1a-ac17-65a03a20bb4e/plot_periodogram.png",
+      "filename": "plot_periodogram.png",
+      "size_bytes": 36806,
+      "sha256": "383f832d86b798ef8425b4e49d7ba3a5ce63630b4443832a561122bb2a28ca1d",
+      "line_count": 206,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/9c44d67a-14fb-5f1a-ac17-65a03a20bb4e/plot_periodogram_long.png",
+      "filename": "plot_periodogram_long.png",
+      "size_bytes": 39532,
+      "sha256": "072aa9be9f98e57872952eae5e8a11ee3a1307e7c32b3bb03425cd073b221795",
+      "line_count": 205,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/9c44d67a-14fb-5f1a-ac17-65a03a20bb4e/plot_phase_folded_0286.png",
+      "filename": "plot_phase_folded_0286.png",
+      "size_bytes": 20526,
+      "sha256": "c9b0bfed03a20e6c7432dc0d2d9915a05df99e17d7c77ded0c07a55506cecf7a",
+      "line_count": 137,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/9c44d67a-14fb-5f1a-ac17-65a03a20bb4e/plot_phase_folded_0998.png",
+      "filename": "plot_phase_folded_0998.png",
+      "size_bytes": 20841,
+      "sha256": "3fda4a34ac2d1c37c17b5bc9fec2026b982c76444eb67d0a0734cda9d68ac6b8",
+      "line_count": 98,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/9c44d67a-14fb-5f1a-ac17-65a03a20bb4e/plot_phase_folded_alias_check.png",
+      "filename": "plot_phase_folded_alias_check.png",
+      "size_bytes": 20519,
+      "sha256": "56c76f6f8b984a9ce462cd4d33bf5c87a5d7c80bec52482cb683fa8eb3c8f3c3",
+      "line_count": 87,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/9c44d67a-14fb-5f1a-ac17-65a03a20bb4e/plot_phase_folded_long.png",
+      "filename": "plot_phase_folded_long.png",
+      "size_bytes": 18054,
+      "sha256": "637af1e71fbf3e1b83c2114e7a2cadd5caaec09f16975156fcd2d03188b641c4",
+      "line_count": 108,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/9c44d67a-14fb-5f1a-ac17-65a03a20bb4e/plot_raw.png",
+      "filename": "plot_raw.png",
+      "size_bytes": 20444,
+      "sha256": "099d7a2954735c977e53ccfda80070adfd4fd6a99dd3b81c2098dcdd8105dae6",
+      "line_count": 112,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/analyze_5.py",
+      "filename": "analyze_5.py",
+      "size_bytes": 1591,
+      "sha256": "9e7389422aca6fec47bea17014f26f98dca970b55dd49ec9c335b1922c44d574",
+      "line_count": 50,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_investigations/investigation_summary.md",
+      "filename": "investigation_summary.md",
+      "size_bytes": 1871,
+      "sha256": "e0831ac68a50f09ad6a132f5e5d41e1a272d1b8116de57c13a650748abee8f09",
+      "line_count": 25,
+      "classification": "RETAIN",
+      "rationale": "Genuine empirical ASAS-SN candidate case studies and light curve data"
+    },
+    {
+      "relative_path": "variable_star_pipeline/candidate_summary.md",
+      "filename": "candidate_summary.md",
+      "size_bytes": 258,
+      "sha256": "152c9c52141551f37398aa7b985686540e0d43b4e6a408087e251da9da9fee55",
+      "line_count": 8,
+      "classification": "RETAIN",
+      "rationale": "Historical pipeline documentation and reports"
+    },
+    {
+      "relative_path": "variable_star_pipeline/check_alias_1.py",
+      "filename": "check_alias_1.py",
+      "size_bytes": 1153,
+      "sha256": "7d100eb2cf00a68a219bb96b9d1d130675c2bb63474c996672dd077ff7349cb6",
+      "line_count": 36,
+      "classification": "REPAIR",
+      "rationale": "Historical pipeline script requiring database path fixes or algorithmic updates"
+    },
+    {
+      "relative_path": "variable_star_pipeline/convert_to_parquet.py",
+      "filename": "convert_to_parquet.py",
+      "size_bytes": 532,
+      "sha256": "8296a75cc2c100db14142483e288f8cb7ed30a2a24db6e63c45420d10ced0672",
+      "line_count": 14,
+      "classification": "REPAIR",
+      "rationale": "Historical pipeline script requiring database path fixes or algorithmic updates"
+    },
+    {
+      "relative_path": "variable_star_pipeline/convert_to_sqlite.py",
+      "filename": "convert_to_sqlite.py",
+      "size_bytes": 1385,
+      "sha256": "b9efd7bdbcfa482c25591d5d576b0ed026d7857674d8e19bb8df5e2ff8e7c234",
+      "line_count": 36,
+      "classification": "REPAIR",
+      "rationale": "Historical pipeline script requiring database path fixes or algorithmic updates"
+    },
+    {
+      "relative_path": "variable_star_pipeline/data_dictionary.md",
+      "filename": "data_dictionary.md",
+      "size_bytes": 3291,
+      "sha256": "096392b93fd45b6446b61bab227608c4a8c4977f1ebb1686f081f64bfe84753f",
+      "line_count": 151,
+      "classification": "RETAIN",
+      "rationale": "Historical pipeline documentation and reports"
+    },
+    {
+      "relative_path": "variable_star_pipeline/discovery_scoring.py",
+      "filename": "discovery_scoring.py",
+      "size_bytes": 3057,
+      "sha256": "b27c266eb1a9a97d0d6370df7f484328f9f6c0c8e421370e84bed1cd744382b4",
+      "line_count": 70,
+      "classification": "REPAIR",
+      "rationale": "Historical pipeline script requiring database path fixes or algorithmic updates"
+    },
+    {
+      "relative_path": "variable_star_pipeline/discovery_scoring_v2.py",
+      "filename": "discovery_scoring_v2.py",
+      "size_bytes": 4072,
+      "sha256": "f41a39f4d8323f731f11510ba03d573d39f5580185cd4c0b561522e7da92c62f",
+      "line_count": 105,
+      "classification": "REPAIR",
+      "rationale": "Historical pipeline script requiring database path fixes or algorithmic updates"
+    },
+    {
+      "relative_path": "variable_star_pipeline/discovery_v2_report.md",
+      "filename": "discovery_v2_report.md",
+      "size_bytes": 1807,
+      "sha256": "033e6f6af69bed362ac7979eb5e7e49816ba60bddc081b0d11b081bed4f8aa77",
+      "line_count": 28,
+      "classification": "RETAIN",
+      "rationale": "Historical pipeline documentation and reports"
+    },
+    {
+      "relative_path": "variable_star_pipeline/executed_candidates.csv",
+      "filename": "executed_candidates.csv",
+      "size_bytes": 9781,
+      "sha256": "b063ab991e6944b6cdf8f95cc7cbcdf38185634212a5d5dd4e697a5de45b6bd1",
+      "line_count": 51,
+      "classification": "RETAIN",
+      "rationale": "Historical pipeline documentation and reports"
+    },
+    {
+      "relative_path": "variable_star_pipeline/extract_features.py",
+      "filename": "extract_features.py",
+      "size_bytes": 1740,
+      "sha256": "6939a7202ebf0dfe7e32a363bbdefafd02eabf169265fc9a73276fbe26cdc8a7",
+      "line_count": 51,
+      "classification": "REPAIR",
+      "rationale": "Historical pipeline script requiring database path fixes or algorithmic updates"
+    },
+    {
+      "relative_path": "variable_star_pipeline/feature_descriptions.md",
+      "filename": "feature_descriptions.md",
+      "size_bytes": 439,
+      "sha256": "0e9707972ee7c8682e678aea74699d96c4615cb8d35376e55b68b35207f72ebc",
+      "line_count": 7,
+      "classification": "RETAIN",
+      "rationale": "Historical pipeline documentation and reports"
+    },
+    {
+      "relative_path": "variable_star_pipeline/generate_data_dictionary.py",
+      "filename": "generate_data_dictionary.py",
+      "size_bytes": 1324,
+      "sha256": "360cfc517a9a224216a1595bf552fa5f013676075c04632915ef75e730b1d681",
+      "line_count": 39,
+      "classification": "REPAIR",
+      "rationale": "Historical pipeline script requiring database path fixes or algorithmic updates"
+    },
+    {
+      "relative_path": "variable_star_pipeline/generate_reports.py",
+      "filename": "generate_reports.py",
+      "size_bytes": 4859,
+      "sha256": "e60641a05c0f5da3a7a088a4dee48161b22188ca85d72d035539594bd0f53441",
+      "line_count": 79,
+      "classification": "REPAIR",
+      "rationale": "Historical pipeline script requiring database path fixes or algorithmic updates"
+    },
+    {
+      "relative_path": "variable_star_pipeline/master_catalog.csv",
+      "filename": "master_catalog.csv",
+      "size_bytes": 3269,
+      "sha256": "26685b030ec6a998291bf5a8619d61d1c6c408816eff48fdd0f3ec78a8bc83f1",
+      "line_count": 51,
+      "classification": "QUARANTINE",
+      "rationale": "Historical data file containing compromised or manually overridden values"
+    },
+    {
+      "relative_path": "variable_star_pipeline/nonexpert_summary.md",
+      "filename": "nonexpert_summary.md",
+      "size_bytes": 808,
+      "sha256": "52d80283bf309c0e4181a601a7c667514adec98c4b7f42cd71da8dbfe3c2395a",
+      "line_count": 11,
+      "classification": "RETAIN",
+      "rationale": "Historical pipeline documentation and reports"
+    },
+    {
+      "relative_path": "variable_star_pipeline/period_validation.py",
+      "filename": "period_validation.py",
+      "size_bytes": 1869,
+      "sha256": "6ae13796718c35499bd8361b6ba2ad300ad1c144d965f45ed381ad8bc46f15d5",
+      "line_count": 48,
+      "classification": "REPAIR",
+      "rationale": "Historical pipeline script requiring database path fixes or algorithmic updates"
+    },
+    {
+      "relative_path": "variable_star_pipeline/pipeline_log.md",
+      "filename": "pipeline_log.md",
+      "size_bytes": 315,
+      "sha256": "97f061df0e79fab9274fe7462d6511818a677405c462fedd50af32b850fc6b4a",
+      "line_count": 9,
+      "classification": "RETAIN",
+      "rationale": "Historical pipeline documentation and reports"
+    },
+    {
+      "relative_path": "variable_star_pipeline/potential_discoveries.csv",
+      "filename": "potential_discoveries.csv",
+      "size_bytes": 6875,
+      "sha256": "4955944b0d9a6b2ae1b3be20ae0e5671003d61ed10685fa9c97fee6ac16b1de1",
+      "line_count": 51,
+      "classification": "QUARANTINE",
+      "rationale": "Historical data file containing compromised or manually overridden values"
+    },
+    {
+      "relative_path": "variable_star_pipeline/potential_discoveries.md",
+      "filename": "potential_discoveries.md",
+      "size_bytes": 7474,
+      "sha256": "b4161e693eb2a520610b0855f22d0ebd68b737caa799f3c7567ac00c2e387b15",
+      "line_count": 54,
+      "classification": "RETAIN",
+      "rationale": "Historical pipeline documentation and reports"
+    },
+    {
+      "relative_path": "variable_star_pipeline/potential_discoveries_v2.csv",
+      "filename": "potential_discoveries_v2.csv",
+      "size_bytes": 10574,
+      "sha256": "9cd3019dc23bda3c6587f54bb31babc78cd9b71aa7ef5115f6eaecaae94c2933",
+      "line_count": 51,
+      "classification": "RETAIN",
+      "rationale": "Historical pipeline documentation and reports"
+    },
+    {
+      "relative_path": "variable_star_pipeline/provenance_report.md",
+      "filename": "provenance_report.md",
+      "size_bytes": 1912,
+      "sha256": "ff0881512bb8b4457efbf783a1932495d41a0419bbec1f50c482154190e21915",
+      "line_count": 24,
+      "classification": "RETAIN",
+      "rationale": "Historical pipeline documentation and reports"
+    },
+    {
+      "relative_path": "variable_star_pipeline/quality_report.md",
+      "filename": "quality_report.md",
+      "size_bytes": 242,
+      "sha256": "755331a11e5ed4cca6680ba2b08d90e69a161ea7c47a3e201893a54111f35749",
+      "line_count": 9,
+      "classification": "RETAIN",
+      "rationale": "Historical pipeline documentation and reports"
+    },
+    {
+      "relative_path": "variable_star_pipeline/real_candidate_summary.md",
+      "filename": "real_candidate_summary.md",
+      "size_bytes": 278,
+      "sha256": "3ee9e068fd33ae1765813ae17a8f517b81acc25cc6df2b81ed5013c2890259be",
+      "line_count": 8,
+      "classification": "RETAIN",
+      "rationale": "Historical pipeline documentation and reports"
+    },
+    {
+      "relative_path": "variable_star_pipeline/real_survivors.csv",
+      "filename": "real_survivors.csv",
+      "size_bytes": 1441,
+      "sha256": "a61e009b5083ee27402c3381156f035a6c953d2cbe1b6300b65c8b5a4198e7a5",
+      "line_count": 11,
+      "classification": "RETAIN",
+      "rationale": "Restored historical feature tables prior to manual bypass"
+    },
+    {
+      "relative_path": "variable_star_pipeline/reconstruct_candidates.py",
+      "filename": "reconstruct_candidates.py",
+      "size_bytes": 5336,
+      "sha256": "4f478ae3a56a6d38b367ad51b1a7c06dc8e5e3d70bb4cc3732369e5f2ac15ec8",
+      "line_count": 120,
+      "classification": "REPAIR",
+      "rationale": "Historical pipeline script requiring database path fixes or algorithmic updates"
+    },
+    {
+      "relative_path": "variable_star_pipeline/reconstructed_discovery_scores.csv",
+      "filename": "reconstructed_discovery_scores.csv",
+      "size_bytes": 6954,
+      "sha256": "6b69b73d0cbab53a717c1eff749205f2105ea8507955d44f80107a1f03af5f25",
+      "line_count": 51,
+      "classification": "RETAIN",
+      "rationale": "Restored historical feature tables prior to manual bypass"
+    },
+    {
+      "relative_path": "variable_star_pipeline/refine_analysis_1.py",
+      "filename": "refine_analysis_1.py",
+      "size_bytes": 1456,
+      "sha256": "87341c9f685b078a055db5f0a341fb8664a3d008109ec1f1b878eaf3e3c5b60c",
+      "line_count": 41,
+      "classification": "REPAIR",
+      "rationale": "Historical pipeline script requiring database path fixes or algorithmic updates"
+    },
+    {
+      "relative_path": "variable_star_pipeline/rejections_log.csv",
+      "filename": "rejections_log.csv",
+      "size_bytes": 1928,
+      "sha256": "c6d86c9ba51f8a7d79b811e0716804d9d257c7efc6f644cd05286f914ae8189e",
+      "line_count": 51,
+      "classification": "RETAIN",
+      "rationale": "Historical pipeline documentation and reports"
+    },
+    {
+      "relative_path": "variable_star_pipeline/survivors.csv",
+      "filename": "survivors.csv",
+      "size_bytes": 5100,
+      "sha256": "01fe368340fa63d6f93d236c330bc750379938ecb0c54c0d20679dca857abca7",
+      "line_count": 34,
+      "classification": "QUARANTINE",
+      "rationale": "Historical data file containing compromised or manually overridden values"
+    },
+    {
+      "relative_path": "variable_star_pipeline/tribunal_stage.py",
+      "filename": "tribunal_stage.py",
+      "size_bytes": 3148,
+      "sha256": "347678d4afdf767eb84173096cedb4cd2668146bbf945dd2c25644efd97fb5dd",
+      "line_count": 84,
+      "classification": "REPAIR",
+      "rationale": "Historical pipeline script requiring database path fixes or algorithmic updates"
+    },
+    {
+      "relative_path": "variable_star_pipeline/variability_screening.py",
+      "filename": "variability_screening.py",
+      "size_bytes": 2056,
+      "sha256": "5297c20099bc42b53c07c589a85b612ea5d41d0a883b4e0527a46aa5ca9f180c",
+      "line_count": 50,
+      "classification": "REPAIR",
+      "rationale": "Historical pipeline script requiring database path fixes or algorithmic updates"
+    }
+  ],
+  "missing_datasets": [
+    {
+      "name": "TOI_2026.06.01_04.33.13.csv",
+      "referenced_by": "src/planetfall/modules/candidate_harvester.py",
+      "status": "UNAVAILABLE",
+      "description": "NASA Exoplanet Archive TESS TOI catalog snapshot referenced by CandidateHarvester. Missing in repository.",
+      "impact": "Blocks candidate_harvester.py from running out-of-the-box."
+    },
+    {
+      "name": "asassn_data.db",
+      "referenced_by": "variable_star_pipeline/discovery_scoring_v2.py, tribunal_stage.py",
+      "status": "UNAVAILABLE",
+      "description": "SQLite database of ASAS-SN variable stars. Missing from repository.",
+      "impact": "Blocks historical variable star discovery scoring and tribunal scripts."
+    },
+    {
+      "name": "Raw Cecilia FITS Frames (15 files)",
+      "referenced_by": "photometry_analysis/astrometry_validation/*, registration_photometry/*",
+      "status": "UNAVAILABLE",
+      "description": "13 science and 2 dark calibration FITS frames from Whipple Observatory Cecilia Telescope.",
+      "impact": "Blocks re-execution of raw aperture photometry and centroid registration scripts."
+    }
+  ]
+}
